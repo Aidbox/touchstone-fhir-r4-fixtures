@@ -1,4 +1,4 @@
-{:ns     touchstone-fhir-r4-fixtures.fixtures
+{:ns     touchstone-fhir-r4-fixtures
  :import #{aidbox}
 
  seed
