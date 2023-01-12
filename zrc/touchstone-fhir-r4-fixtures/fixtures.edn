@@ -141,8 +141,7 @@
                :telecom
                [{:system "phone", :value "555-555-5555", :use "home"}
                 {:system "email", :value "amy.shaw@example.com"}],
-               :gender "female",
-               :birthsex "F"}
+               :gender "female"}
               {:fhirUser     {:resourceType "Patient" :id "pt-1"}
                :password     "pass"
                :id           "inferno-patient-user"
@@ -202,8 +201,7 @@
                [{:system "phone", :value "555-555-5555", :use "home"}
                 {:system "email", :value "amy.shaw@example.com"}],
                :generalPractitioner [{:id "pr-1", :resourceType "Practitioner"}],
-               :gender "female",
-               :birthsex "F"}
+               :gender "female"}
               {:name "US-Core example CareTeam",
                :status "proposed",
                :subject {:id "pt-1", :resourceType "Patient"},
