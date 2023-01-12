@@ -4,7 +4,23 @@
  seed
  {:zen/tags  #{aidbox/service}
   :engine    aidbox/seed
-  :resources [{:address
+  :resources [{:resourceType "Client"
+               :id "touchstone-client"
+               :jwks_uri "https://touchstone.aegis.net/touchstone/tsJwks?type=RS384",
+               :auth
+               {:client_credentials
+                {:client_assertion_types
+                 ["urn:ietf:params:oauth:client-assertion-type:jwt-bearer"],
+                 :access_token_expiration 3600}},
+               :scope ["system/*.*"],
+               :grant_types ["client_credentials"]}
+              {:resourceType "AccessPolicy"
+               :id "touchstone-client-admin-policy"
+               :engine "allow"
+               :link [{:id "touchstone-client", :resourceType "Client"}]}
+
+
+              {:address
                [{:city "Amherst",
                  :line ["3300 Washtenaw Avenue, Suite 227"],
                  :state "MA",
@@ -129,10 +145,6 @@
                [{:system "phone", :value "555-555-5555", :use "home"}
                 {:system "email", :value "amy.shaw@example.com"}],
                :gender "female"}
-              {:fhirUser     {:resourceType "Patient" :id "pt-1"}
-               :password     "pass"
-               :id           "inferno-patient-user"
-               :resourceType "User"}
               {:address
                [{:line ["49 Meadow St"],
                  :city "Mounds",
