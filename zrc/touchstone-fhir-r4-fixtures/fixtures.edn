@@ -1119,7 +1119,7 @@
                 {:id "pt-1-procedure", :resourceType "Procedure"}],
                :recorded "2015-06-27T08:39:24+10:00",
                :id "pt-1-provenance",
-               :resourceType "Provenance",
+               :resourceType "Provenance"}
               {:onset {:dateTime "2016-08-10"},
                :category
                [{:text "Problem",
