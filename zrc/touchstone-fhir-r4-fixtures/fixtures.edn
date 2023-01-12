@@ -1,7 +1,7 @@
-{:ns fixtures
+{:ns     touchstone-fhir-r4-fixtures.fixtures
  :import #{aidbox}
 
- fixtures
+ seed
  {:zen/tags  #{aidbox/service}
   :engine    aidbox/seed
   :resources [{:address

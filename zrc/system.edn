@@ -1,7 +1,0 @@
-{:ns     system
- :import #{aidbox
-          fixtures}
-
- fixtures-box
- {:zen/tags #{aidbox/system}
-  :services {:seed-fixtures fixtures/fixtures}}}

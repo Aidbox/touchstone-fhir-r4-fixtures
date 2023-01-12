@@ -1,0 +1,6 @@
+{:ns     touchstone-fhir-r4-fixtures.system
+ :import #{aidbox touchstone-fhir-r4-fixtures.fixtures}
+
+ box
+ {:zen/tags #{aidbox/system}
+  :services {:seed-fixtures touchstone-fhir-r4-fixtures.fixtures/seed}}}
