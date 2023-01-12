@@ -1,1 +1,1 @@
-{:deps {base-config "https://github.com/Aidbox/aidbox-docker-compose"}}
+{:deps {base-config "https://github.com/Aidbox/fhir-r4-configuration-project.git"}}
