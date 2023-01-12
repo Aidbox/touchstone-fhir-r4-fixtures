@@ -1,6 +1,19 @@
 {:ns     touchstone-fhir-r4-fixtures.system
- :import #{aidbox touchstone-fhir-r4-fixtures.fixtures}
+ :import #{aidbox touchstone-fhir-r4-fixtures.fixtures system}
+
+ zen-config
+ {:zen/tags #{aidbox.config/config}
+
+  :search        system/search-config
+  :compatibility system/compatibility-config
+
+  :fhir-version            "4.0.1"
+  :compliant-mode-enabled? true
+  :override-createdat-url  "http://fhir.aidbox.app/extension/createdat"
+  :correct-aidbox-format   true
+  :disable-legacy-seed     true}
 
  box
  {:zen/tags #{aidbox/system}
+  :config   zen-config
   :services {:seed-fixtures touchstone-fhir-r4-fixtures.fixtures/seed}}}
