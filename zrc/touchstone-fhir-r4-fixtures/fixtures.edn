@@ -103,19 +103,6 @@
                  :suffix ["PharmD"],
                  :period {:start "2020-07-22"}}],
                :birthDate "1987-02-20",
-               :ethnicity
-               {:ombCategory
-                {:system "urn:oid:2.16.840.1.113883.6.238",
-                 :code "2135-2",
-                 :display "Hispanic or Latino"},
-                :detailed
-                [{:system "urn:oid:2.16.840.1.113883.6.238",
-                  :code "2184-0",
-                  :display "Dominican"}
-                 {:system "urn:oid:2.16.840.1.113883.6.238",
-                  :code "2148-5",
-                  :display "Mexican"}],
-                :text "Hispanic or Latino"},
                :resourceType "Patient",
                :active true,
                :communication
@@ -169,19 +156,6 @@
                  :suffix ["PharmD"],
                  :period {:start "2020-07-22"}}],
                :birthDate "1987-02-20",
-               :ethnicity
-               {:ombCategory
-                {:system "urn:oid:2.16.840.1.113883.6.238",
-                 :code "2135-2",
-                 :display "Hispanic or Latino"},
-                :detailed
-                [{:system "urn:oid:2.16.840.1.113883.6.238",
-                  :code "2184-0",
-                  :display "Dominican"}
-                 {:system "urn:oid:2.16.840.1.113883.6.238",
-                  :code "2148-5",
-                  :display "Mexican"}],
-                :text "Hispanic or Latino"},
                :resourceType "Patient",
                :active true,
                :communication
